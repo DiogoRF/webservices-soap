@@ -2,9 +2,9 @@ package br.unisal.soap.impl;
 
 import br.unisal.soap.imports.mobileprontompgateway.MPGateway;
 import br.unisal.soap.imports.mobileprontompgateway.MPGatewaySoap;
-import br.unisal.soap.interfaces.Services;
+import br.unisal.soap.interfaces.IServices;
 
-public class EmissorSMS implements Services{
+public class EmissorSMS implements IServices{
 	
 	private static final String CREDENTIAL = "";
 	private static final String TOKEN = "";
@@ -20,7 +20,8 @@ public class EmissorSMS implements Services{
 	public EmissorSMS(String message) {
 		this.message = message;
 	}
-
+	
+	@Override
 	public String execute() {
 		MPGateway gateway = new MPGateway();
 		MPGatewaySoap proxy = gateway.getMPGatewaySoap();

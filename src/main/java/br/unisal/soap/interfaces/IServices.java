@@ -1,5 +1,5 @@
 package br.unisal.soap.interfaces;
 
-public interface Services {
+public interface IServices {
 	String execute();
 }

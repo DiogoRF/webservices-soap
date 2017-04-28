@@ -4,7 +4,7 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService(endpointInterface="calculadora")
-public class Calculadora {
+public class CalculadoraService {
 	
 	@WebMethod(operationName="soma")
 	public double getSoma(double v1, double v2) {
