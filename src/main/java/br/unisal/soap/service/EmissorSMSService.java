@@ -1,12 +1,10 @@
 package br.unisal.soap.service;
 
 import javax.ejb.Stateless;
-import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 import br.unisal.soap.impl.EmissorSMS;
 import br.unisal.soap.interfaces.IEmissorSMS;
-import br.unisal.soap.interfaces.IServices;
 
 @Stateless
 @WebService(
